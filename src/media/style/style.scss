@@ -121,13 +121,16 @@
     padding: 230px 0 120px;
     background-position: center;
     position: relative;
+    margin-bottom: 116px;
 
         @media only screen and (max-width: 1024px) {
             padding: 257px 0 126px;
+            margin-bottom: 78px;
         }
 
         @media only screen and (max-width: 767px) {
             padding: 106px 0 52px;
+            margin-bottom: 40px;
         }
 
     &::after{
@@ -162,7 +165,7 @@
                 margin-bottom: 62px;
             }
 
-            @media only screen and (max-width: 767px) {
+            @media only screen and (max-width: 768px) {
                 @include fontRaleway(#FFF,  36px, 900, 42px);
             }
 
@@ -180,10 +183,9 @@
                 margin-bottom: 89px;
             }
 
-            @media only screen and (max-width: 767px) {
+            @media only screen and (max-width: 768px) {
                 @include fontRaleway(#FFF, 14px, 400, 16px);
             }
-
     }
 
     &__btn{
@@ -199,10 +201,10 @@
         margin: 0 auto;
         cursor: pointer;
 
-            @media (max-width: 1024px) {
+            @media only screen and (max-width: 1024px) {
                 max-width: 314px;
             }
-            @media (max-width: 767px) {
+            @media only screen and (max-width: 767px) {
                 max-width: 100%;
                 padding: 16px;
             }
@@ -217,4 +219,72 @@
         }
     }
 }
+
+.features {
+    &__container{
+    max-width: 1170px;
+    margin: 0 auto 133.57px;
+    width: 100%;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 88.6px;
+        @media (max-width: 1024px) {
+            margin: 0 auto 80.11px;
+            padding: 0 20px;
+            column-gap: 20px;
+            row-gap: 49.84px;
+        }
+        @media (max-width: 767px) {
+            display: inline-block;
+            margin: 0 auto 34.85px;
+        }
+    }
+
+    &__wrap{
+        display: grid;
+        align-items: center;
+        margin-bottom: 41.46px;
+    }
     
+    &__icon{
+        max-width: 100px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 29px;
+        @media (max-width: 1024px) {
+            max-width: 85px;
+            margin-bottom: 24.52px;
+        }
+        @media (max-width: 767px) {
+            max-width: 75px;
+            margin-bottom: 21.72px;
+        }
+    }
+
+    &__title{
+        @include fontRaleway(#2D3033, 24px, 900, 28px);
+        padding: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20.43px;
+        @media (max-width: 1024px) {
+            @include fontRaleway(#2D3033, 18px, 900, 21px);
+            padding: 20px;
+            margin-bottom: 4px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: -8px;
+        }
+
+    }
+
+    &__description{
+        @include fontRaleway(#6C7279, 18px, 400, 21px);
+        text-align: center;
+        @media (max-width: 1024px) {
+            @include fontRaleway(#6C7279, 14px, 400, 16px);
+        }
+    }
+}
