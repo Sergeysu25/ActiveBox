@@ -47,7 +47,8 @@ ul, ol {
   border: 1px solid #babbc5;
   width: calc(100% - 30px);
   position: absolute;
-  transform: translateY(45px);
+  top: 100%;
+  left: 15px;
 }
 
 @media only screen and (width <= 767px) {
@@ -130,6 +131,12 @@ ul, ol {
     font-size: 12px;
     font-weight: 700;
     line-height: 14px;
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 850px) {
+  .header__item {
+    min-width: max-content;
   }
 }
 
