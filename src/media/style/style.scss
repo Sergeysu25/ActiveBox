@@ -92,6 +92,10 @@
         text-align: center;
         text-transform: uppercase;
         border-bottom: 3px solid transparent;
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        transition-delay: 0.1s;
 
         @media only screen and (max-width: 1024px) {
             @include fontRaleway(#fff, 12px, 700, 14px);
@@ -200,6 +204,10 @@
         border: none;
         margin: 0 auto;
         cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        transition-delay: 0.1s;
 
             @media only screen and (max-width: 1024px) {
                 max-width: 314px;
@@ -286,5 +294,79 @@
         @media (max-width: 1024px) {
             @include fontRaleway(#6C7279, 14px, 400, 16px);
         }
+    }
+}
+
+.works {
+    &__container{
+        max-width: 1170px;
+        margin: 0 auto 114px;
+        width: 100%;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 2px;
+        row-gap: 2px;
+            @media (max-width: 767px) {
+                grid-template-columns: repeat(2,1fr);
+            }
+    
+    }
+    &__container-item{
+        position: absolute;
+        opacity: 0;
+        background: #ff4343cc;
+        width: 100%;
+        height: 100%;
+        justify-self: center;
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+        transition-delay: 0.1s;
+
+            &:hover{
+                opacity: 1; 
+            }
+            &:active{
+                opacity: 1;
+                background: #b90c0ccc;
+            }
+        
+        .works__title{
+            @include fontRaleway(#ffffff, 24px, 900, 28px);
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 20.6px; 
+        
+            @media (max-width: 1024px) {
+                @include fontRaleway(#ffffff, 18px, 900, 21px);
+                margin-bottom: 12.81px; 
+            }
+        
+            @media (max-width: 767px) {
+                margin-bottom: 4.63px; 
+            }
+        }
+        .works__deskription{
+            @include fontRaleway(#ffffff, 18px, 400, 21px);
+            text-align: center;
+            @media (max-width: 1024px) {
+                @include fontRaleway(#ffffff, 14px, 400, 16px);
+            }
+        }
+    }
+
+    &__container-image{
+        position: relative;
+        display: grid;
+        width: 100%;
+        height: 230px;
+        overflow: hidden;
+        align-content: center;
+    }
+
+    &__image{
+        width: 100%;
+        height: 100%;
     }
 }
