@@ -499,4 +499,138 @@ ul, ol {
   height: 100%;
 }
 
+.ourteam__container {
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto 114px;
+  padding: 15px;
+  display: grid;
+}
+
+@media only screen and (width <= 1024px) {
+  .ourteam__container {
+    column-gap: 25.2px;
+    margin: 0 auto 78.41px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .ourteam__container {
+    margin: 0 auto 34.39px;
+    display: block;
+  }
+}
+
+.ourteam__container-wrap {
+  display: grid;
+}
+
+@media only screen and (width <= 767px) {
+  .ourteam__container-wrap {
+    margin-bottom: 49.4px;
+  }
+}
+
+.ourteam__image {
+  align-content: center;
+  max-width: 270px;
+  max-height: 270px;
+  margin-bottom: 30px;
+  display: grid;
+  overflow: hidden;
+}
+
+@media only screen and (width <= 1024px) {
+  .ourteam__image {
+    margin-bottom: 25.23px;
+  }
+}
+
+.ourteam__img {
+  width: 100%;
+}
+
+.ourteam__title {
+  color: #2d3033;
+  margin-bottom: 5.3px;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+@media only screen and (width <= 1024px) {
+  .ourteam__title {
+    color: #2d3033;
+    margin-bottom: 4.6px;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+}
+
+.ourteam__text {
+  color: #ff4343;
+  text-transform: uppercase;
+  margin-bottom: 17.8px;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+@media only screen and (width <= 1024px) {
+  .ourteam__text {
+    color: #ff4343;
+    margin-bottom: 22.45px;
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .ourteam__text {
+    margin-bottom: 38.5px;
+  }
+}
+
+.ourteam__description {
+  color: #6c7279;
+  margin-bottom: 37.8px;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+@media only screen and (width <= 1024px) {
+  .ourteam__description {
+    margin-bottom: 39.2px;
+  }
+}
+
+@media only screen and (width <= 767px) {
+  .ourteam__description {
+    margin-bottom: 55.15px;
+  }
+}
+
+.ourteam__icons svg {
+  transition: all .2s linear 50ms;
+}
+
+.ourteam__icons svg:hover {
+  transform: translateY(-5px);
+}
+
+.ourteam__icons svg:active {
+  background-color: #5d63e2;
+}
+
 /*# sourceMappingURL=index.6d849f59.css.map */
