@@ -390,15 +390,11 @@
         }
         
             @media only screen and (max-width: 1024px) {
-                margin: 0 auto 78.41px;
                 padding: 20px;
                 column-gap: 25.2px;
-        
             }
             @media only screen and (max-width: 767px) {
                 display: block;
-                margin: 0 auto 34.39px;
-
             }
 
         &-wrap{
@@ -421,6 +417,7 @@
     
     &__img{
         width: 100%;
+        height: 100%;
         position: absolute;
         left: 0;
         top: 0;
@@ -462,20 +459,19 @@
 
     &__icons {
         &-link {
-            width: 100%;
-            height: 100%;
+            display: inline-flex;
             svg{
                 transition-property: all;
                 transition-duration: 0.2s;
                 transition-timing-function: linear;
                 transition-delay: 0.05s;
                 &:hover {
-                        transform: translateY(-5px);
-                    }
+                    transform: translateY(-5px);
+                }
                     
                 &:active {
-                        background-color: #5d63e2;
-                    }
+                    background-color: #5d63e2;
+                }
             }
         }
     }

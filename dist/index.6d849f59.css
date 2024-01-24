@@ -517,14 +517,12 @@ ul, ol {
 @media only screen and (width <= 1024px) {
   .ourteam__container {
     column-gap: 25.2px;
-    margin: 0 auto 78.41px;
     padding: 20px;
   }
 }
 
 @media only screen and (width <= 767px) {
   .ourteam__container {
-    margin: 0 auto 34.39px;
     display: block;
   }
 
@@ -547,6 +545,7 @@ ul, ol {
 
 .ourteam__img {
   width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -621,8 +620,7 @@ ul, ol {
 }
 
 .ourteam__icons-link {
-  width: 100%;
-  height: 100%;
+  display: inline-flex;
 }
 
 .ourteam__icons-link svg {
