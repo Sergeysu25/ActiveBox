@@ -297,46 +297,61 @@ ul, ol {
   box-shadow: 4px 4px 30px #ff4343;
 }
 
+.features {
+  margin: 0 auto 133.57px;
+}
+
+@media (width <= 1024px) {
+  .features {
+    margin-bottom: 80.11px;
+  }
+}
+
 .features__container {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 88.6px 30px;
   width: 100%;
-  max-width: 1170px;
-  margin: 0 auto 133.57px;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 15px;
   display: grid;
+}
+
+.features__container :last-child {
+  margin-bottom: 0;
 }
 
 @media (width <= 1024px) {
   .features__container {
     gap: 49.84px 20px;
-    margin: 0 auto 80.11px;
     padding: 0 20px;
   }
 }
 
 @media (width <= 767px) {
   .features__container {
-    margin: 0 auto 34.85px;
-    display: inline-block;
+    display: block;
+  }
+
+  .features__wrap {
+    margin-bottom: 41.85px;
   }
 }
 
-.features__wrap {
-  align-items: center;
-  margin-bottom: 41.46px;
-  display: grid;
+.features__icon {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 0 auto 29px;
 }
 
-.features__icon {
+.features__icon .feature__icon {
   width: 100%;
-  max-width: 100px;
-  margin: 0 auto 29px;
 }
 
 @media (width <= 1024px) {
   .features__icon {
     max-width: 85px;
+    max-height: 85px;
     margin-bottom: 24.52px;
   }
 }
@@ -353,7 +368,6 @@ ul, ol {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20.43px;
-  padding: 22px;
   font-family: Raleway, sans-serif;
   font-size: 24px;
   font-weight: 900;
@@ -363,8 +377,7 @@ ul, ol {
 @media (width <= 1024px) {
   .features__title {
     color: #2d3033;
-    margin-bottom: 4px;
-    padding: 20px;
+    margin-bottom: 25px;
     font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 900;
@@ -374,7 +387,7 @@ ul, ol {
 
 @media (width <= 767px) {
   .features__title {
-    margin-bottom: -8px;
+    margin-bottom: 13px;
   }
 }
 
