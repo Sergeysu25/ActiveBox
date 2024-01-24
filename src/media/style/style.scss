@@ -236,6 +236,7 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 15px;
+        :last-child{ margin-bottom: 0;}
 
         @media (max-width: 1024px) {
             padding: 0 20px;
@@ -245,7 +246,6 @@
 
         @media (max-width: 767px) {
             display: block;
-            :last-child{ margin-bottom: 0;}
         }
     }
 

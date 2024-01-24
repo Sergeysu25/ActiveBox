@@ -315,6 +315,10 @@ ul, ol {
   display: grid;
 }
 
+.features__container :last-child {
+  margin-bottom: 0;
+}
+
 @media (width <= 1024px) {
   .features__container {
     gap: 49.84px 20px;
@@ -325,10 +329,6 @@ ul, ol {
 @media (width <= 767px) {
   .features__container {
     display: block;
-  }
-
-  .features__container :last-child {
-    margin-bottom: 0;
   }
 
   .features__wrap {
