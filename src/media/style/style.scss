@@ -64,12 +64,9 @@
             background: transparent;
             border: none;
         }
-    }
-
-    &__logo {
-            svg{
-            width: 100%;
-            object-fit: contain;
+    &__logo svg{
+        width: 100%;
+        object-fit: contain;
         }
     }
 
@@ -220,7 +217,6 @@
         }
     }
 }
-
 .features {
     margin: 0 auto 133.57px;
 
