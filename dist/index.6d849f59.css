@@ -296,9 +296,7 @@ ul, ol {
 }
 
 .features {
-  max-width: 1200px;
   margin: 0 auto 133.57px;
-  padding: 0 15px;
 }
 
 @media (width <= 1024px) {
@@ -311,6 +309,9 @@ ul, ol {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 88.6px 30px;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
   display: grid;
 }
 
@@ -324,6 +325,10 @@ ul, ol {
 @media (width <= 767px) {
   .features__container {
     display: block;
+  }
+
+  .features__container :last-child {
+    margin-bottom: 0;
   }
 
   .features__wrap {
@@ -370,7 +375,7 @@ ul, ol {
 @media (width <= 1024px) {
   .features__title {
     color: #2d3033;
-    margin-bottom: 4px;
+    margin-bottom: 25px;
     font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 900;
@@ -380,7 +385,7 @@ ul, ol {
 
 @media (width <= 767px) {
   .features__title {
-    margin-bottom: -8px;
+    margin-bottom: 13px;
   }
 }
 
