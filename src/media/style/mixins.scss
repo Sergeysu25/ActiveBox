@@ -1,0 +1,22 @@
+@mixin container() {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@mixin fontRaleway($color, $fontSize, $fontWeight, $lineHeight){
+    color: $color;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin fontCardo($color, $fontSize, $fontWeight, $lineHeigh){
+    color: $color;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeigh;
+    font-family: 'Cardo', serif;
+    font-style: italic;
+}
