@@ -91,7 +91,7 @@ ul, ol {
   }
 }
 
-.header__logo svg {
+.header__menu__logo svg {
   object-fit: contain;
   width: 100%;
 }
