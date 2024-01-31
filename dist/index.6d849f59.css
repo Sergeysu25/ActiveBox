@@ -579,7 +579,7 @@ ul, ol {
 @media only screen and (width <= 1024px) {
   .ourteam__container {
     column-gap: 25.2px;
-    padding: 20px;
+    padding: 0 20px;
   }
 }
 
@@ -729,11 +729,27 @@ ul, ol {
   max-width: 741px;
 }
 
+@media only screen and (width <= 767px) {
+  .testimonials__image {
+    aspect-ratio: 320 / 270;
+    max-width: none;
+    position: relative;
+  }
+}
+
 .testimonials__img {
   object-fit: cover;
   object-position: center;
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (width <= 767px) {
+  .testimonials__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .testimonials__info {
@@ -751,9 +767,16 @@ ul, ol {
   }
 }
 
+@media only screen and (width <= 850px) {
+  .testimonials__info {
+    margin: 0 auto;
+    padding-left: 30px;
+  }
+}
+
 @media only screen and (width <= 767px) {
   .testimonials__info {
-    padding: 20px;
+    padding: 0 20px;
     display: block;
   }
 }
@@ -786,7 +809,7 @@ ul, ol {
 @media only screen and (width <= 767px) {
   .testimonials__comment {
     text-align: center;
-    margin-bottom: 36px;
+    margin: 0 auto;
   }
 }
 
@@ -807,6 +830,20 @@ ul, ol {
     font-weight: 700;
     line-height: 14px;
   }
+}
+
+@media only screen and (width <= 767px) {
+  .testimonials__autor {
+    text-align: center;
+  }
+}
+
+.testimonials .swiper-pagination-bullet:hover {
+  background-color: #e71414;
+}
+
+.testimonials .swiper-pagination-bullet:active {
+  background-color: #ff4343;
 }
 
 .download {
@@ -830,19 +867,11 @@ ul, ol {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  display: grid;
 }
 
 @media only screen and (width <= 1024px) {
   .download__container {
-    max-width: 984px;
     padding: 0 20px;
-  }
-}
-
-@media only screen and (width <= 767px) {
-  .download__container {
-    margin-bottom: 55.15px;
   }
 }
 
@@ -926,6 +955,7 @@ ul, ol {
   font-weight: 900;
   line-height: 28px;
   transition: all .2s linear .1s;
+  display: block;
 }
 
 @media only screen and (width <= 1024px) {
@@ -991,6 +1021,10 @@ ul, ol {
   .footer__container-main .footer__main {
     display: block;
   }
+
+  .footer__container-main .footer__main-location {
+    margin-bottom: 69px;
+  }
 }
 
 .footer__container-main .footer__main-title {
@@ -1041,17 +1075,17 @@ ul, ol {
   }
 }
 
-@media only screen and (width <= 767px) {
-  .footer__container-main .footer__main-text {
-    margin-bottom: 69px;
-  }
-}
-
 .footer__container-main .footer__main-links {
   justify-content: center;
   column-gap: 27px;
   max-width: 100%;
   display: flex;
+}
+
+@media only screen and (width <= 767px) {
+  .footer__container-main .footer__main-links {
+    margin-bottom: 59px;
+  }
 }
 
 .footer__container-main .footer__main-links svg {
@@ -1064,12 +1098,6 @@ ul, ol {
 
 .footer__container-main .footer__main-links svg:active {
   background-color: #e71414;
-}
-
-@media only screen and (width <= 767px) {
-  .footer__container-main .footer__main-links svg {
-    margin-bottom: 59px;
-  }
 }
 
 .footer__container-main .footer__main-links h2 {
@@ -1100,12 +1128,12 @@ ul, ol {
 
 .footer__container-autor {
   background: #2c3154;
+  padding: 24px 0;
 }
 
 .footer__container-autor .footer__autor {
   max-width: 370px;
   margin: 0 auto;
-  padding: 24px 0;
 }
 
 @media only screen and (width <= 1024px) {
